@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geisha</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.min.css"> -->
+</head>
+<body>
+    
+    <header class="header header--main">
+
+        <div class="logo">
+            <svg width="362" height="128" viewBox="0 0 181 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="Gradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="0%" stop-color="hsla(4, 100%, 50%, 100%)"/>
+                        <stop offset="100%" stop-color="hsla(54, 89%, 62%, 92%)"/>
+                    </linearGradient>
+                </defs>
+                <path d="M125.16 2.37872C119.699 5.44907 119.335 6.83804 118.899 25.9911C118.534 41.3429 118.389 43.0973 117.151 44.4863L115.768 46.0215H120.719C125.597 46.0215 125.67 46.0215 124.432 44.6325C123.267 43.3898 123.122 42.0008 123.413 34.1787C123.631 26.576 123.923 24.6753 125.306 22.0436C128.291 16.3415 135.354 15.2449 139.723 19.7773C141.834 21.9704 141.834 21.9704 142.199 33.8132L142.563 45.656L145.766 45.8753C148.897 46.0946 148.897 46.0946 147.732 44.4132C146.931 43.3167 146.567 41.1236 146.567 37.2491C146.494 34.2518 146.203 29.3539 145.912 26.4298C145.402 22.0436 144.893 20.6546 143.218 18.9001C142.126 17.7304 140.16 16.5608 138.776 16.3415C137.466 16.1222 136.374 15.7567 136.374 15.6104C136.374 15.4642 137.174 14.587 138.194 13.5636C139.504 12.2477 140.014 10.9318 140.014 8.95803C139.941 2.23252 131.786 -1.42265 125.16 2.37872ZM135.718 4.57183C140.669 7.86148 138.922 13.4904 132.442 15.318C128.437 16.4146 125.67 18.2422 123.85 20.8739L122.466 22.9939L122.685 15.6836C122.976 7.56907 123.85 5.44907 127.272 3.9139C130.476 2.52493 132.951 2.67114 135.718 4.57183Z" fill="url(#Gradient)"/>
+                <path d="M76.8839 9.24919C75.5733 9.68781 75.7189 12.7582 76.9567 13.7816C78.3401 14.9513 81.0342 13.6354 81.0342 11.8078C81.0342 9.4685 79.1411 8.29885 76.8839 9.24919Z" fill="url(#Gradient)"/>
+                <path d="M50.8917 15.3175C42.2998 17.9492 37.2758 28.2568 40.6251 36.3713C44.4114 45.2899 56.1342 49.3837 64.0708 44.4858C70.5511 40.4651 70.1142 31.0347 63.2698 28.0375C61.0126 27.0871 61.0854 27.0871 65.2358 27.014C69.1676 27.014 69.3861 26.9409 69.3861 25.1865C69.3861 18.0223 59.4836 12.7589 50.8917 15.3175ZM61.3767 18.0223C62.8329 19.3382 63.7795 21.0196 64.0708 22.774L64.5076 25.552H56.207C51.6198 25.552 47.4695 25.2596 46.9598 24.894C46.3773 24.5285 46.1589 23.6513 46.4501 22.5547C47.4695 18.534 50.9645 16.0485 55.6973 16.0485C58.4642 16.0485 59.6292 16.4871 61.3767 18.0223ZM62.3233 29.0609C69.0948 32.0582 69.5317 39.2954 63.197 42.8775C57.2992 46.2402 50.4548 44.4127 47.6879 38.9299C46.1589 35.9327 44.9939 28.3299 45.9404 27.3796C46.9598 26.283 58.7554 27.5258 62.3233 29.0609Z" fill="url(#Gradient)"/>
+                <path d="M95.3792 15.4642C91.3017 16.5607 88.3164 19.9235 88.3164 23.3593C88.3164 27.1607 90.5736 29.7193 95.5977 31.4007C97.782 32.1318 99.6752 33.0821 99.8208 33.4476C99.8936 33.8131 97.6364 36.2987 94.7239 39.0035C91.1561 42.2931 89.6998 44.0476 90.2095 44.5593C90.6464 44.998 92.9764 45.6559 95.452 46.0945C103.097 47.4835 110.306 44.7787 112.709 39.7345C115.257 34.2518 112.272 29.6462 105.5 28.769C103.607 28.4766 102.005 28.038 101.787 27.7456C101.641 27.5262 103.607 25.1869 106.155 22.6283C108.777 19.9966 110.888 17.6573 110.888 17.3649C110.888 16.5607 103.607 14.5869 100.767 14.66C99.3111 14.7331 96.9083 15.0987 95.3792 15.4642ZM106.447 16.8531C107.757 17.2918 108.704 17.9497 108.558 18.169C108.413 18.4614 106.155 20.8007 103.461 23.2862L98.583 27.8187L96.0345 26.7221C91.593 24.8945 91.8114 19.3387 96.3258 16.9993C98.583 15.8297 103.389 15.7566 106.447 16.8531ZM107.102 34.7635C108.704 35.86 109.214 38.7111 108.267 41.2697C107.175 44.0476 98.5102 45.8021 93.4861 44.1938C91.8842 43.6821 92.0298 43.4628 96.7627 38.638C102.078 33.3014 103.971 32.5704 107.102 34.7635Z" fill="url(#Gradient)"/>
+                <path d="M162.076 15.39C157.416 16.779 155.159 22.9197 157.926 26.8673C158.945 28.4024 158.945 28.5487 157.271 29.1335C154.213 30.3031 151.664 34.1045 151.664 37.4673C151.737 42.2921 155.086 45.5087 161.203 46.3859C165.571 47.0438 170.158 45.728 171.979 43.3156C173.289 41.7073 173.508 41.6342 173.508 42.8769C173.508 44.9969 174.964 46.0204 178.168 46.0204C180.862 46.0204 180.935 45.9473 179.624 44.9969C178.386 44.0466 178.168 42.7307 177.877 33.0811C177.658 27.0866 177.148 21.6038 176.639 20.7997C174.964 17.8756 172.27 16.048 168.484 15.3169C166.299 14.9514 164.18 14.869 164.18 14.869C164.18 14.869 163.55 14.869 162.076 15.39ZM170.377 18.0218C172.052 19.1183 173.508 22.4811 173.508 25.1859C173.508 26.7942 173.071 26.8673 166.882 27.379C160.984 27.8176 160.183 27.7445 159.309 26.5749C158.217 25.1128 157.926 21.3845 158.654 19.3376C159.819 16.2673 166.518 15.5362 170.377 18.0218ZM173.144 33.9583C173.144 40.3183 171.323 43.3887 166.955 44.5583C161.421 46.0204 156.761 42.5114 156.761 36.8093C156.761 32.8618 159.309 30.1569 163.533 29.6452C165.207 29.4259 167.392 29.0604 168.411 28.9142C172.925 28.1831 173.144 28.4024 173.144 33.9583Z" fill="url(#Gradient)"/>
+                <path d="M14.0477 16.1218C8.95078 18.1687 4.65484 23.8708 4.58203 28.6956C4.58203 33.4473 8.14984 38.7839 12.8827 40.9039L15.6495 42.2198L12.5186 42.7315C4.80047 43.9011 0.941406 46.8253 0.941406 51.4308C0.941406 58.4487 9.89734 61.0074 16.5961 55.8901L18.7805 54.2818L21.3289 56.0363C22.7123 56.9867 25.0423 58.0832 26.4986 58.5218C31.8867 60.2032 37.3477 56.4749 37.3477 51.2115C37.3477 47.9218 35.9642 45.8018 33.0517 44.5591C29.5567 43.1701 26.4258 44.1936 18.7805 49.3108C12.8098 53.3315 11.2808 54.0625 8.58672 54.0625C5.09172 54.0625 3.12578 52.6736 3.12578 50.3342C3.12578 46.3867 6.47516 44.7053 17.3242 43.0239C26.2073 41.708 31.2314 38.4915 33.0517 33.0818C33.8527 30.5232 33.6342 25.6984 32.6148 23.1398C32.178 22.1163 32.3964 21.897 33.7798 22.0432C35.2361 22.2625 35.5273 21.897 35.7458 19.8501C35.9642 17.5839 35.0177 16.7067 34.0711 18.2418C33.343 19.4846 30.4305 19.046 26.2802 17.1453C22.2027 15.2446 17.3242 14.806 14.0477 16.1218ZM23.0764 17.5108C26.9355 18.9729 29.2655 25.7715 28.2461 32.6432C26.8627 42.1467 15.7952 44.0473 11.3536 35.5673C9.75172 32.4239 9.75172 25.2598 11.4992 21.6777C13.538 17.3646 18.2708 15.6101 23.0764 17.5108ZM32.178 47.9218C36.037 52.8929 32.0323 58.7411 25.9161 57.0598C23.3677 56.3287 19.8727 53.697 19.8727 52.4542C19.8727 52.1618 21.0377 50.5536 22.4939 48.9453C24.6783 46.5329 25.6248 46.0211 27.882 46.0211C30.0664 46.0211 31.013 46.4598 32.178 47.9218Z" fill="url(#Gradient)"/>
+                <path d="M75.0654 18.096C76.6673 19.1925 77.3954 23.5056 77.3954 32.278C77.3954 40.6118 76.7401 44.3401 74.9926 45.4367C74.4829 45.7291 76.376 46.0215 79.1429 46.0215C84.0941 46.0215 84.167 46.0215 82.9291 44.6325C81.837 43.4629 81.5457 41.1236 81.2545 30.3773L80.8176 17.5111H77.4682C75.5023 17.5111 74.4829 17.8036 75.0654 18.096Z" fill="url(#Gradient)"/>
+                <ellipse cx="90.8745" cy="61.1694" rx="2.24759" ry="2.25532" fill="url(#Gradient)"/>
+            </svg>
+        </div>
+    
+        <nav class="nav">
+            <ul>
+                <!-- <li class="li_item prom">
+                    <h2>
+                        NEW
+                    </h2>
+                    <div class="li_line"></div>
+                </li> -->
+                <li class="li_item">
+                    <span>
+                        О бренде
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Инфо
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item catalog">
+                    <span>
+                        Каталог
+                    </span>
+                    <div class="li_line"></div>
+
+                    <ul class="sub_menu">
+                        <div>
+                            <li>Боди и платья</li>
+                            <li>Корсеты</li>
+                            <li>Бюстгалтеры</li>
+                        </div>
+                        <div>
+                            <li>Пояса и юбки</li>
+                            <li>Трусы</li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Доставка
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Вход
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Галерея
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <!-- <li class="prom li_item">
+                    <h2>
+                        SALE
+                    </h2>
+                    <div class="li_line"></div>
+                </li> -->
+            </ul>
+        </nav>
+    
+        <div class="nav_icons">
+            <div>
+                <span class="checkout"></span>
+                <img class="fav" src="../static/media/favorites.svg" alt="">
+            </div>
+            <div>
+                <span class="checkout"></span>
+                <img class="cart" src="../static/media/cart.svg" alt="">
+                <span class="cart_counter">2</span>
+            </div>
+        </div>
+        
+        <nav class="navigation">
+            <a href="#" class="navigation__link prom">NEW</a>
+            <a href="#" class="navigation__link">О нас</a>
+            <a href="#" class="navigation__link">Информация</a>
+            <a href="#" class="navigation__link">Каталог</a>
+            <a href="#" class="navigation__link">Доставка</a>
+            <a href="#" class="navigation__link">Контакты</a>
+            <a href="#" class="navigation__link prom">SALE</a>
+        </nav>
+        
+        <div class="hamburger">
+            <span class="hamburger__patty"></span>
+            <span class="hamburger__patty"></span>
+            <span class="hamburger__patty"></span>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div style="width: 100%; height: 100vh; background: black; position: relative; overflow: hidden;">
+            <canvas class="webgl"></canvas>
+            <div style="overflow: hidden;" class="video">
+                <video id="video1" muted autoplay playsinline>
+                    <source src="../static/three.mp4">
+                </video>
+            </div>
+            <div class="video">
+                <video id="video3" src="../static/four_s.mp4" muted style="opacity: 0;"></video>
+            </div>
+
+            <div class="language">
+                <div>
+                    EN
+                </div>
+                <div>
+                    RU
+                </div>
+                <div>
+                    中国
+                </div>
+            </div>
+
+            <div class="society">
+                <span>INSTAGRAM</span>
+                <span>WHATSAPP</span>
+            </div>
+        </div>
+
+        <!-- <div class="slider">
+
+            <canvas class="dom-gl"></canvas>
+            <div class="slider__image--wrapper">
+                <img class="slider__image slider__image--1" src="../static/1.png" alt="image 01" />
+                <img class="slider__image slider__image--2" src="../static/2.png" alt="image 02" />
+                <img class="slider__image slider__image--3" src="../static/3.png" alt="image 03" />
+                <img class="slider__image slider__image--4" src="../static/4.jpg" alt="image 04" />
+            </div>
+            <div class="slider__slide-info--wrapper">
+                <div class="slider__silde-info slide--current">
+                    <div class="slide__text--wrapper">
+                        <h2 class="slide__text slide__text--title" data-splitting>Юбки</h2>
+                        <p class="slide__text slide__text--description">
+                            Пояса, юбки со стрепами, стразы и облегающая сетка - идеальное дополнение, чтобы добавить пикантности в образ, когда не нужно прятать белье под одеждой
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__silde-info">
+                    <div class="slide__text--wrapper">
+                        <h2 class="slide__text slide__text--title" data-splitting>Трусы</h2>
+                        <p class="slide__text slide__text--description">
+                            Ежедневная чувственная база премиум качества для твоего тела
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__silde-info">
+                    <div class="slide__text--wrapper">
+                        <h2 class="slide__text slide__text--title" data-splitting>Бюстгальтеры</h2>
+                        <p class="slide__text slide__text--description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus aperiam harum accusantium error tempora dicta quidem in provident laborum?
+                        </p>
+                    </div>
+                </div>
+                <div class="slider__silde-info">
+                    <div class="slide__text--wrapper">
+                        <h2 class="slide__text slide__text--title" data-splitting>Корсеты</h2>
+                        <p class="slide__text slide__text--description">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, accusamus aperiam harum accusantium error tempora dicta quidem in provident laborum?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <nav class="slider__nav--wrapper">
+                <button class="slider__nav slider__nav--prev">
+                    <svg width="51" height="9" viewBox="0 0 51 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="-1" x2="49.9704" y2="-1" transform="matrix(-1 0 0 1 50.0371 2)" stroke="white" stroke-width="2"/>
+                        <line y1="-1" x2="19.9882" y2="-1" transform="matrix(-0.936672 -0.350207 -0.350207 0.936672 18.7227 9)" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
+                <button class="slider__nav slider__nav--next">
+                    <svg width="51" height="9" viewBox="0 0 51 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="49.9704" y2="1" stroke="white" stroke-width="2"/>
+                        <line x1="30.9642" y1="8.06333" x2="49.6866" y2="1.06333" stroke="white" stroke-width="2"/>
+                    </svg>
+                </button>
+            </nav>
+        </div> -->
+
+
+
+        <div class="root-cont">
+
+            <!-- <section class="sales">
+                <div class="sales_ribbon rib_one">
+                    <div>
+                        SALE <span>geisha under</span>
+                        geisha under <span>SALE</span>
+                        SALE <span>geisha under</span>
+                    </div>
+                </div>
+                <div class="sales_ribbon rib_one">
+                    <div>
+                        SALE <span>geisha under</span>
+                        geisha under <span>SALE</span>
+                        SALE <span>geisha under</span>
+                    </div>
+                </div>
+            </section> -->
+    
+            <section class="go_about">
+                <img src="../static/media/about_logo.svg" alt="">
+    
+                <div class="video_wrapper">
+                    <video src="../static/media/about_mini.mp4" autoplay muted loop></video>
+                </div>
+    
+                <div class="more">
+                    <button>
+                        <span>Подробнее</span>
+                        <div>
+                            <svg width="28" height="6" viewBox="0 0 28 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <line x1="0.820312" y1="1.34375" x2="26.9949" y2="1.34375" stroke="white"/>
+                                <line x1="17.0476" y1="5.04143" x2="26.8544" y2="1.37481" stroke="white"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </section>
+    
+            <section class="new_collection">
+    
+                <div class="new_collection-title">New Collection</div>
+    
+                <div class="new_collection-img">
+                    <img class="img " src="../static/media/new_one.jpg" alt="">
+                </div>
+                <div class="new_collection-img">
+                    <img class="img " src="../static/media/new_two.jpg" alt="">
+                </div>
+                
+                
+            </section>
+            
+            <section class="message">
+                <img class="message_img " src="../static/media/collection.svg" alt="">
+                <div class="message_text">
+                    
+                    Мы создали нашу новую коллекцию белья и аксессуаров для создания ярких акцентов в ваших образах.
+                    На сайте представлены изделия, сочетающие в себе полупрозрачную сетку, нежное кружево и мягкую веганскую кожу.
+                </div>
+    
+                <div class="message_wrapper">
+                    <div class="message_wrapper-text ">
+                        <span>Подпишитесь на рассылку и первыми получайте новости об акциях, новинках и скидках</span>
+                        <span>Подпишитесь на рассылку и первыми получайте новости об акциях, новинках и скидках</span>
+                        <span>Подпишитесь на рассылку и первыми получайте новости об акциях, новинках и скидках</span>
+                        <span>Подпишитесь на рассылку и первыми получайте новости об акциях, новинках и скидках</span>
+                        <span>Подпишитесь на рассылку и первыми получайте новости об акциях, новинках и скидках</span>
+                        <span>Подпишитесь на рассылку и первыми получайте новости об акциях, новинках и скидках</span>
+                    </div>
+                    <div class="input_wrapper">
+                        <input type="text" placeholder="Введите ваш адрес электронной почты">
+                        <button>Подписаться</button>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="popular_catalog">
+                <div class="popular_item">
+                    <div class="descr">
+                        <div>new</div>
+                        <span>Бюстгалтер из чёрной сетки на каркасе с принтом ZEBRA</span>
+                    </div>
+                    <img class="img " src="../static/media/12.png" alt="">
+    
+                    <div class="darken"></div>
+                </div>
+                <div class="popular_item">
+                    <div class="descr">
+                        <div>new</div>
+                        <span>Бюстгалтер чёрный со стрепами</span>
+                    </div>
+                    <img class="img " src="../static/media/new_one.jpg" alt="">
+    
+                    <div class="darken"></div>
+                </div>
+                <div class="popular_item">
+                    <div class="descr">
+                        <div>new</div>
+                        <span>Бюстгалтер чёрный со стрепами</span>
+                    </div>
+                    <img class="img " src="../static/media/new_one.jpg" alt="">
+    
+                    <div class="darken"></div>
+                </div>
+                <div class="popular_item">
+                    <div class="descr">
+                        <div>new</div>
+                        <span>Красный пояс BANDO с вышивкой</span>
+                    </div>
+                    <img class="img " src="../static/media/ubka.jpg" alt="">
+    
+                    <div class="darken"></div>
+                </div>
+                
+            </section>
+    
+            <!-- <section class="home_certificate">
+                <div class="cert_wrapper">
+                    <div class="cert_text">
+                        Выбираете подарок?
+                        <br>
+                        Дарите не вещи, а уверенность в себе и красоту - точно угадаете с размером.
+                        <br>
+                        Сертификат на товары бренда geisha.
+                    </div>
+                    <img class="cert_img " src="media/test.jpg" alt="">
+                </div>
+            </section> -->
+    
+            
+            
+        </div>
+            
+    </main>
+    
+    
+    
+    <!-- //////// SHADER CODE //////// -->
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tiny-emitter@2.1.0/index.min.js"></script>
+
+
+    <!-- FOR NEW COLLECTION -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js" integrity="sha512-I+JeBiUY5B5/qJ6ey5CNqJ0yhAuNHBBbRjdM3alkabxCLz3++7hbeOScVSjyRouAihQIiint6Z2Or976vU2XuQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FOR NEW COLLECTION -->
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.3/smooth-scrollbar.min.js"></script> -->
+    <script id="vertexShader" type="x-shader/x-vertex">
+        precision mediump float;
+    
+        varying vec2 vUv;
+        varying float vWave;
+    
+        uniform float uTime;
+        uniform float uAmplitude;
+        uniform float uProgDirection;
+        uniform float uMouseOverAmp;
+        uniform float uRadius;
+    
+        uniform vec2 uMeshSize;
+        uniform vec2 uMousePos;
+    
+        uniform bool uAnimating;
+        uniform bool uTranslating;
+    
+        float mapVal(in float n,in float start1,in float stop1,in float start2,in float stop2){
+                return((n-start1)/(stop1-start1))*(stop2-start2)+start2;
+        }
+    
+        void main(){
+                vec3 pos=position;
+                vUv=uv;
+    
+                vec2 center=vUv-uMousePos;
+                center.x*=uMeshSize.x/uMeshSize.y;
+                float dist=length(center);
+    
+                float radius=uRadius;
+    
+                float mask=smoothstep(radius,radius*5.,dist);
+                float d=mapVal(mask,-1.,1.,-1.,0.);
+    
+                if(uAnimating){
+                        pos.z=sin(pos.x*5.+uTime*10.*uProgDirection)*uAmplitude;
+                        pos.z*=2.5;
+                }else{
+                        pos.z=d*uMouseOverAmp;
+                        pos.z*=15.;
+                }
+    
+                if(uTranslating){
+                        pos.z=sin(pos.y*6.+uTime*10.)*uAmplitude;
+                        pos.z*=3.5;
+                }
+    
+                vWave=pos.z;
+    
+                gl_Position=projectionMatrix*modelViewMatrix*vec4(pos,1.);
+        }
+    </script>
+    
+    <script id="fragmentShader" type="x-shader/x-fragment">
+        precision mediump float;
+    
+        varying vec2 vUv;
+        varying float vWave;
+    
+        uniform float uTime;
+        uniform float uProg;
+        uniform float uProgDirection;
+    
+        uniform sampler2D uCurrTex;
+        uniform sampler2D uNextTex;
+    
+        uniform vec2 uMeshSize;
+        uniform vec2 uImageSize;
+    
+        vec2 backgroundCoverUv(vec2 uv,vec2 canvasSize,vec2 textureSize){
+                vec2 ratio=vec2(
+                        min((canvasSize.x/canvasSize.y)/(textureSize.x/textureSize.y),1.),
+                        min((canvasSize.y/canvasSize.x)/(textureSize.y/textureSize.x),1.)
+                );
+    
+                vec2 uvWithRatio=uv*ratio;
+    
+                return vec2(
+                        uvWithRatio.x+(1.-ratio.x)*.5,
+                        uvWithRatio.y+(1.-ratio.y)*.5
+                );
+        }
+    
+        void main(){
+                vec2 texUv=backgroundCoverUv(vUv,uMeshSize,uImageSize);
+    
+                float x=uProg;
+                float y;
+                if(uProgDirection==1.)y=(x*2.+(vUv.x-1.));
+                else y=((x*2.)-vUv.x);
+                x=smoothstep(0.,1.,y);
+    
+                float w=vWave;
+    
+                float r1=texture2D(uCurrTex,texUv+w*.04).r;
+                float g1=texture2D(uCurrTex,texUv+w*.01).g;
+                float b1=texture2D(uCurrTex,texUv+w*-.03).b;
+                vec3 tex1=vec3(r1,g1,b1);
+    
+                float r2=texture2D(uNextTex,texUv+w*.04).r;
+                float g2=texture2D(uNextTex,texUv+w*.01).g;
+                float b2=texture2D(uNextTex,texUv+w*-.03).b;
+                vec3 tex2=vec3(r2,g2,b2);
+    
+                float scaleUp=(.4+.6*(1.-uProg));
+                float scaleDown=(.6+.4*uProg);
+    
+                vec4 f1=mix(
+                        texture2D(uCurrTex,texUv*(1.-x)*scaleUp+vec2(.15)*uProg),
+                        texture2D(uNextTex,texUv*x*scaleDown),
+                x);
+    
+                vec3 f2=mix(tex1,tex2,x);
+    
+                vec4 final=mix(f1,vec4(f2,1.),.12);
+    
+                gl_FragColor=final;			
+        }
+    </script>
+    
+    <script id='vertex-shader' type='x-shader/x-vertex'>
+        uniform float time;
+        varying vec2 vUv;
+        varying vec3 vPosition;
+        uniform sampler2D texture1;
+        uniform float distortion;
+        float PI = 3.14159;
+
+        vec4 permute(vec4 x){return mod(x*x*34.+x,289.);}
+        float snoise(vec3 v){
+            const vec2 C = 1./vec2(6,3);
+            const vec4 D = vec4(0,.5,1,2);
+            vec3 i  = floor(v + dot(v, C.yyy));
+            vec3 x0 = v - i + dot(i, C.xxx);
+            vec3 g = step(x0.yzx, x0.xyz);
+            vec3 l = 1. - g;
+            vec3 i1 = min( g.xyz, l.zxy );
+            vec3 i2 = max( g.xyz, l.zxy );
+            vec3 x1 = x0 - i1 + C.x;
+            vec3 x2 = x0 - i2 + C.y;
+            vec3 x3 = x0 - D.yyy;
+            i = mod(i,289.);
+            vec4 p = permute( permute( permute(
+            i.z + vec4(0., i1.z, i2.z, 1.))
+            + i.y + vec4(0., i1.y, i2.y, 1.))
+            + i.x + vec4(0., i1.x, i2.x, 1.));
+            vec3 ns = .142857142857 * D.wyz - D.xzx;
+            vec4 j = p - 49. * floor(p * ns.z * ns.z);
+            vec4 x_ = floor(j * ns.z);
+            vec4 x = x_ * ns.x + ns.yyyy;
+            vec4 y = floor(j - 7. * x_ ) *ns.x + ns.yyyy;
+            vec4 h = 1. - abs(x) - abs(y);
+            vec4 b0 = vec4( x.xy, y.xy );
+            vec4 b1 = vec4( x.zw, y.zw );
+            vec4 sh = -step(h, vec4(0));
+            vec4 a0 = b0.xzyw + (floor(b0)*2.+ 1.).xzyw*sh.xxyy ;
+            vec4 a1 = b1.xzyw + (floor(b1)*2.+ 1.).xzyw*sh.zzww ;
+            vec3 p0 = vec3(a0.xy,h.x);
+            vec3 p1 = vec3(a0.zw,h.y);
+            vec3 p2 = vec3(a1.xy,h.z);
+            vec3 p3 = vec3(a1.zw,h.w);
+            vec4 norm = inversesqrt(vec4(dot(p0,p0), dot(p1,p1), dot(p2, p2), dot(p3,p3)));
+            p0 *= norm.x;
+            p1 *= norm.y;
+            p2 *= norm.z;
+            p3 *= norm.w;
+            vec4 m = max(.6 - vec4(dot(x0,x0), dot(x1,x1), dot(x2,x2), dot(x3,x3)), 0.);
+            return .5 + 12. * dot( m * m * m, vec4( dot(p0,x0), dot(p1,x1),dot(p2,x2), dot(p3,x3) ) );
+        }
+
+        vec3 snoiseVec3( vec3 x ){
+        return vec3(  snoise(vec3( x )*2.-1.),
+            snoise(vec3( x.y - 19.1 , x.z + 33.4 , x.x + 47.2 ))*2.-1.,
+            snoise(vec3( x.z + 74.2 , x.x - 124.5 , x.y + 99.4 )*2.-1.)
+        );
+        }
+
+        vec3 curlNoise( vec3 p ){
+            const float e = .1;
+            vec3 dx = vec3( e   , 0.0 , 0.0 );
+            vec3 dy = vec3( 0.0 , e   , 0.0 );
+            vec3 dz = vec3( 0.0 , 0.0 , e   );
+
+            vec3 p_x0 = snoiseVec3( p - dx );
+            vec3 p_x1 = snoiseVec3( p + dx );
+            vec3 p_y0 = snoiseVec3( p - dy );
+            vec3 p_y1 = snoiseVec3( p + dy );
+            vec3 p_z0 = snoiseVec3( p - dz );
+            vec3 p_z1 = snoiseVec3( p + dz );
+
+            float x = p_y1.z - p_y0.z - p_z1.y + p_z0.y;
+            float y = p_z1.x - p_z0.x - p_x1.z + p_x0.z;
+            float z = p_x1.y - p_x0.y - p_y1.x + p_y0.x;
+
+            const float divisor = 1.0 / ( 2.0 * e );
+            return normalize( vec3( x , y , z ) * divisor );
+        }
+
+        void main() {
+            vUv = uv;
+
+            vec3 distortion1 = vec3(position.x*2.,position.y,1.)*curlNoise(vec3(
+                position.x*0.0002 + time*0.3,
+                position.y*0.0008 + time*0.3,
+                (position.x + position.y)*0.005
+            ))*distortion;
+
+            vec3 finalPosition = position + distortion1;
+
+            vec4 mvPosition = modelViewMatrix * vec4(finalPosition, 1.);
+            gl_PointSize = 1.;
+            gl_Position = projectionMatrix * mvPosition;
+        }
+    </script>
+    
+    <script id='fragment-shader' type='x-shader/x-fragment'>
+        uniform float time;
+        uniform float progress;
+        uniform sampler2D t;
+        uniform sampler2D t1;
+        uniform vec4 resolution;
+        varying vec2 vUv;
+        varying vec3 vPosition;
+        float PI = 3.14159;
+
+        void main() {
+            //vec2 newUV = vPosition.xy/vec2(480.*1.5, 820.*1.5) + vec2(0.5);
+            //gl_FragColor = vec4(1.,0.,0.0,1.);
+
+            vec4 tt = texture2D(t,vUv);
+            vec4 tt1 = texture2D(t1,vUv);
+            vec4 finalTexture = mix(tt, tt1, progress);
+
+            //gl_FragColor = vec4(vUv,0.,1.);
+
+            gl_FragColor = finalTexture;
+
+            if(gl_FragColor.r<0.1 && gl_FragColor.b<0.1 && gl_FragColor.g<0.1) discard;
+            //gl_FragColor = vec4(1.,0.,0.,0.5);
+        }
+    </script>
+    <script src="../dist/js/index.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger)
+
+    // =======================about
+
+        gsap.to('.about-img', {
+            scrollTrigger: {
+                trigger: '.img_one',
+                start: 'center center',
+                end: 'center 100px',
+                scrub: 10,
+                // markers: true
+            },
+            y: 80,
+            duration: 3
+        })
+        gsap.to('.about-img-two', {
+            scrollTrigger: {
+                trigger: '.img_one',
+                start: 'center center',
+                end: 'center 100px',
+                scrub: 5,
+                // markers: true
+            },
+            y: -50,
+            duration: 3
+        })
+        gsap.to('.circle_under', {
+            scrollTrigger: {
+                trigger: '.img_one',
+                start: 'top center',
+                end: 'top 100px',
+                scrub: 5,
+                // markers: true
+            },
+            rotation: 180,
+            // duration: 3
+        })
+        gsap.to('.circle_geisha', {
+            scrollTrigger: {
+                trigger: '.circle_geisha',
+                start: 'top center',
+                end: 'top 100px',
+                scrub: 5,
+                // markers: true
+            },
+            rotation: 180,
+            // duration: 3
+        })
+
+        //circle bg
+        gsap.to('.cicle_bg', {
+            scrollTrigger: {
+                trigger: '.img_one',
+                start: 'top top',
+                end: 'top 100px',
+                // scrub: 2,
+                // markers: true
+            },
+            "clip-path": "circle(100% at 50% 50%)",
+            width: "100%",
+            height: "100%",
+            duration: 1
+        })
+
+        // =======================popular
+
+        gsap.to('.title', {
+            scrollTrigger: {
+                trigger: '.title',
+                start: 'top center',
+                end: 'top 100px',
+                scrub: 1,
+                // markers: true
+            },
+            y: -20,
+            duration: 3
+        })
+
+
+        gsap.to('.item--two', {
+            scrollTrigger: {
+                trigger: '.item',
+                start: 'top center',
+                end: 'top 10px',
+                scrub: 10,
+                // markers: true
+            },
+            y: -100,
+            duration: 7
+        })
+        gsap.to('.item--one', {
+            scrollTrigger: {
+                trigger: '.item',
+                start: 'top center',
+                end: 'top 10px',
+                scrub: 10,
+                // markers: true,
+            },
+            y: 100,
+            duration: 7
+        })
+        
+
+        // certificate
+        gsap.to('.certificate_img', {
+            scrollTrigger: {
+                trigger: '.certificate_img',
+                start: 'top center',
+                end: 'top 100px',
+                scrub: 10,
+                // markers: true
+            },
+            rotation: 180,
+            // duration: 3
+        })
+
+
+        //logo gradient
+        gsap.registerPlugin(ScrollTrigger)
+
+            window.addEventListener('load', () => {
+                const stops = [...document.querySelector('#Gradient').children]
+                gsap.to(stops[0], {
+                    stopColor: 'hsla(54, 89%, 62%, 92%)',
+                    scrollTrigger: {
+                        start: 0,
+                        scrub: 1,
+                        end: "max"
+                    },
+                })
+                gsap.to(stops[1], {
+                    stopColor: 'hsla(4, 100%, 50%, 100%)',
+                    scrollTrigger: {
+                        start: 0,
+                        scrub: 1,
+                        end: "max"
+                    },
+                })
+            })
+    </script>
+</body>
+</html>

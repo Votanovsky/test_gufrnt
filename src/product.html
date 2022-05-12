@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <header class="header header--main">
+
+        <div class="logo">
+            <img src="../static/media/logo.svg" alt="">
+        </div>
+    
+        <nav class="nav">
+            <ul>
+                <!-- <li class="li_item prom">
+                    <h2>
+                        NEW
+                    </h2>
+                    <div class="li_line"></div>
+                </li> -->
+                <li class="li_item">
+                    <span>
+                        О бренде
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Инфо
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Каталог
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Доставка
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Вход
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <li class="li_item">
+                    <span>
+                        Галерея
+                    </span>
+                    <div class="li_line"></div>
+                </li>
+                <!-- <li class="prom li_item">
+                    <h2>
+                        SALE
+                    </h2>
+                    <div class="li_line"></div>
+                </li> -->
+            </ul>
+        </nav>
+    
+        <div class="nav_icons">
+            <div>
+                <span class="checkout"></span>
+                <img class="fav" src="../static/media/favorites.svg" alt="">
+            </div>
+            <div>
+                <span class="checkout"></span>
+                <img class="cart" src="../static/media/cart.svg" alt="">
+                <span class="cart_counter">0</span>
+            </div>
+        </div>
+        
+        <nav class="navigation">
+            <a href="#" class="navigation__link prom">NEW</a>
+            <a href="#" class="navigation__link">О нас</a>
+            <a href="#" class="navigation__link">Информация</a>
+            <a href="#" class="navigation__link">Каталог</a>
+            <a href="#" class="navigation__link">Доставка</a>
+            <a href="#" class="navigation__link">Контакты</a>
+            <a href="#" class="navigation__link prom">SALE</a>
+        </nav>
+        
+        <div class="hamburger">
+            <span class="hamburger__patty"></span>
+            <span class="hamburger__patty"></span>
+            <span class="hamburger__patty"></span>
+        </div>
+    </header>
+
+
+    
+    <section style="background: #fff;;" class="product">
+        <div class="product_wrapper">
+            <div class="product_descr">
+                <div class="product_descr-width">
+                    <h3>Информация по изделию и уход</h3>
+                    <div class="info">
+                        <div class="title">
+                            СОСТАВ:
+                        </div>
+                        <div class="descr">
+                            95% полиэстер, 5% эластан. 
+                            Рекомендации по уходу: 
+                            Деликатная стирка, 30 градусов.
+                            <div class="br"></div>
+                            95% полиэстер, 5% эластан. 
+                            Рекомендации по уходу: 
+                            Деликатная стирка, 30 градусов
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+            <div class="product_img">
+                <div class="tab pageNav__tabItem">
+                    <img onclick="next(this)" class="tab_i" src="../static/media/one.png" alt="">
+                    <img onclick="next(this)" class="tab_i" src="../static/media/DSC01644.jpg" alt="">
+                    <img onclick="next(this)" class="tab_i" src="../static/media/DSC01722.jpg" alt="">
+                </div>
+                <div class="img_wrapper">
+                    <img id="pic" class="img_mein" src="../static/media/one.png" alt="">
+                </div>
+            </div>
+            <div class="product_buy">
+                <h3 class="name">Боди прозрачное с фигурной вставкой</h3>
+    
+                <div class="code">
+                    Артикул: 
+                    <span>
+                        10136
+                    </span>
+                </div>
+    
+                <div class="size_wrapper">
+                    <div class="title">Размер:</div>
+
+                    <div class="sizes">
+                        <div class="sizes_item">
+                            <span>S</span>
+                            <div></div>
+                        </div>
+                        <div class="sizes_item">
+                            <span>M</span>
+                            <div></div>
+                        </div>
+                        <div class="sizes_item">
+                            <span>L</span>
+                            <div></div>
+                        </div>
+                        <div class="sizes_item">
+                            <span>XL</span>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="title--two">подобрать размер</div>
+
+                    <div class="btn-wrapper">
+                        <button>
+                            <span>В избранное</span>
+                            <div>
+                                <svg width="28" height="6" viewBox="0 0 28 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.820312" y1="1.34375" x2="26.9949" y2="1.34375" stroke="white"/>
+                                    <line x1="17.0476" y1="5.04143" x2="26.8544" y2="1.37481" stroke="white"/>
+                                </svg>
+                            </div>
+                        </button>
+                        <button>
+                            <span>Купить</span>
+                            <div>
+                                <svg width="28" height="6" viewBox="0 0 28 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="0.820312" y1="1.34375" x2="26.9949" y2="1.34375" stroke="white"/>
+                                    <line x1="17.0476" y1="5.04143" x2="26.8544" y2="1.37481" stroke="white"/>
+                                </svg>
+                            </div>
+                        </button>
+
+
+                    </div>
+                </div>
+
+                <div class="buy_info">
+                    <div class="info">
+                        <div class="title">
+                            СОСТАВ:
+                        </div>
+                        <div class="descr">
+                            95% полиэстер, 5% эластан. 
+                            Рекомендации по уходу: 
+                            Деликатная стирка, 30 градусов.
+                            <div class="br"></div>
+                            95% полиэстер, 5% эластан. 
+                            Рекомендации по уходу: 
+                            Деликатная стирка, 30 градусов
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+         function next(image) {
+            var item = document.getElementById('pic')
+            item.src = image.src
+            item.parentElement.style.display="block"
+        }
+    </script>
+    </script>
+    <script src="./js/header.js"></script>
+</body>
+</html>

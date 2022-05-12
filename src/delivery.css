@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Jost'; /* Имя шрифта */
+    src: url(Jost-300-Light.otf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: 'Monterchi'; /* Имя шрифта */
+    src: url(Monterchi-Light.ttf); /* Путь к файлу со шрифтом */
+}
+   
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: 300;
+}
+canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.ship_wrapper {
+    display: flex;
+    
+}
+.ship_content {
+    width: 50%;
+    margin-left: auto;
+    padding: 120px 60px 60px 0;
+}
+.ship_content .title {
+    font-size: 74px;
+    font-family: 'Monterchi';
+    margin-bottom: 20px;
+    color: #f73c0e;
+    text-transform: uppercase;
+}
+.ship_content .subtitle {
+    font-family: 'Monterchi';
+    font-weight: 300;
+    font-size: 36px;
+    margin: 20px 0 20px 0;
+    font-weight: 300;
+    color: #1C1A1A;
+}
+
+.ship_content .quest {
+    font-size: 24px;
+    margin-bottom: 80px;
+
+    display: flex;
+}
+.ship_content .quest div:first-child {
+    margin-right: 50px;
+}
+.ship_content .images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    align-items: center;
+}
+.ship_content .images svg {
+    width: 100px;
+    max-height: 100px;
+    /* max-height: 200px; */
+    /* background: #000; */
+    margin-right: 20px;
+}
+.ship_content .images .twosvg {
+    width: 150px;
+}
+
+/* accordion=========================== */
+.accordion {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+    color: #1C1A1A;
+    font-size: 28px;
+}
+.panel {
+    display: block;
+    background: white;
+    position:relative;
+    overflow: hidden;
+    color: #1C1A1A;
+    margin: 0 auto;
+}
+.panel-header {
+    font-size: 36px;
+    font-family: 'Monterchi';
+    line-height: 56px;
+    background: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    /* text-indent:10px; */
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.spacer {
+    height: 3px;
+    position: absolute;
+    width: 0;
+    display: block;
+    top: 54px;
+    background: #ff431d;
+}
+
+.panel-content {
+    font-family: 'Jost';
+    background: #fff;
+    position: relative;
+    border-top: 0px solid #ff431d;
+    height: 0;
+    
+}
+.item {
+    display: block;
+    width:100%;
+    cursor: pointer;
+    padding: 15px 0;
+    text-decoration:none;
+    color: #1C1A1A;
+    /* text-indent:25px; */
+    border-bottom:1px solid #ff431d;
+}
+
+.panel i {
+    /* text-indent:0;  Keep paragraph text-indent setting from affecting icons */
+    padding-right: 6px;
+}
+.panel span i {
+
+    padding-right: 0; /* No padding on arrow icon */
+}
+.arrow {
+    margin-top: 20px;
+    float: right;
+}
